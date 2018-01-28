@@ -9,8 +9,8 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
-    <link rel="stylesheet" href="/resources/css/style.css" type="text/css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link
     href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700"
     rel="stylesheet">
@@ -19,17 +19,17 @@
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-fixed-top">
             <ul class="nav navbar-nav">
-              <li><a href="#">Explore</a></li>
+              <li class="active"><a href="#">Explore</a></li>
               <li><a href="#">Start a project</a></li>
               <li><a href="#">About us</a></li>
             </ul>
-            <div class="logo">
-
-            </div>
+            <a class="navbar-brand navbar-right logo">
+              <img src="./resources/images/logo.png" alt="jumpstart logo">
+            </a>
           </div>
         </div>
       </nav>
@@ -39,13 +39,12 @@
     <main>
       <!-- Jumbotron -->
       <section>
-        <div class="jumbotron">
-          <div class="container">
-            <h1></h1>
-            <h3></h3>
-            <div class="button">
-
-            </div>
+        <div class="jumbotron jumbotron-fluid background-bike">
+          <div class="container-fluid">
+            <h1>Get Going</h1>
+            <p>Jumpstart your startup with some crowdsourced seed money, or
+            support one of our 300,000,000+ creators and get rewards.</p>
+            <button class="btn-primary btn-lg">Jump in</button>
           </div>
 
         </div>
@@ -57,19 +56,24 @@
           <div class="title">
 
           </div>
-          <!-- 3 columns -->
-          <div class="features">
-            <div class="image-house">
-              <img src="" alt="">
+          <!-- Grid with 3 columns -->
+          <div class="container col-md-3 features">
+            <div class="row featured-project-image">
+              <img src="./resources/images/featured-project.png" alt="featured project">
             </div>
 
-            <div class="project-desc">
-              <h4></h4>
-              <p></p>
-              <p></p>
+            <div class="row featured-project-desc">
+              <h4>Project Title</h4>
+              <p>By Person Person</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas porta porttitor lectus sed mattis. Sed nec pulvinar
+              purus. Mauris rutrum malesuada ligula, id ullamcorper mauris
+              dapibus eu. Mauris et sapien sit amet urna iaculis finibus quis
+              eget urna. Integer cursus pharetra quam at auctor. Sed tempus
+              placerat augue a interdum.</p>
             </div>
 
-            <div class="product-categories">
+            <div class="row product-categories">
               <ul>
                 <li></li>
                 <li></li>

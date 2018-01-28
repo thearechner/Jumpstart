@@ -1,0 +1,41 @@
+/*Universal Styles*/
+ html {
+   font-size: 14px;
+ }
+
+ body {
+   font-family: "Open-Sans", sans-serif;
+ }
+/*Bootstrap Overrides*/
+
+.btn-primary,
+.btn-lg {
+  background-color: hsl(201.3, 62.3%, 52.2%);
+  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.5);
+  max-width: 11.4rem;
+}
+/*Navbar*/
+
+/*Jumbotron*/
+.jumbotron {
+  background-image: url(../images/jumbotron-bike.jpg);
+  background-size: cover;
+  height: 100%;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.jumbotron .container-fluid {
+  max-width: 51.3rem;
+}
+.jumbotron h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 7.1rem;
+}
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/*Featured Project*/
+/*Projects*/
+/*Learn More*/
