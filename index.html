@@ -19,18 +19,16 @@
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
-          <div class="navbar-fixed-top">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Explore</a></li>
-              <li><a href="#">Start a project</a></li>
-              <li><a href="#">About us</a></li>
-            </ul>
-            <a class="navbar-brand navbar-right logo">
-              <img src="./resources/images/logo.png" alt="jumpstart logo">
-            </a>
-          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Explore</a></li>
+            <li><a href="#">Start a project</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <a class="navbar-brand navbar-right logo">
+            <img src="./resources/images/logo.png" alt="jumpstart logo">
+          </a>
         </div>
       </nav>
 
@@ -52,41 +50,48 @@
 
       <!-- Featured Project -->
       <section>
-        <div class="container">
+        <div class="featured-project">
           <div class="title">
-
+            <h3>Featured Project</h3>
           </div>
-          <!-- Grid with 3 columns -->
-          <div class="container col-md-3 features">
-            <div class="row featured-project-image">
-              <img src="./resources/images/featured-project.png" alt="featured project">
+          <!-- Grid with 1 row, 3 columns -->
+          <div class="container-fluid">
+            <div class="row col-md-6 col-xs-12 featured-project-image">
+              <div class="image-container">
+                <img src="./resources/images/featured-project.png" alt="featured project">
+              </div>
             </div>
 
-            <div class="row featured-project-desc">
-              <h4>Project Title</h4>
-              <p>By Person Person</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Maecenas porta porttitor lectus sed mattis. Sed nec pulvinar
-              purus. Mauris rutrum malesuada ligula, id ullamcorper mauris
-              dapibus eu. Mauris et sapien sit amet urna iaculis finibus quis
-              eget urna. Integer cursus pharetra quam at auctor. Sed tempus
-              placerat augue a interdum.</p>
+            <div class="row col-md-3 col-xs-6 featured-project-desc">
+              <h4>DeFrost: A Documentary</h4>
+              <p>by Leo De Firenze</p>
+              <p>DeFrost is a documentary about growing up in a little red house
+              in a cold, harsh valley. This is a story about my mother's
+              childhood. This film attempts to capture vignettes of her
+              upbringing, her family, friends, pets, and eventual depature from
+              a freezing valley in Northern Italy through beautiful
+              cinematography and narration.</p>
             </div>
 
-            <div class="row product-categories">
+            <div class="row col-md-3 col-xs-6 product-categories">
+              <h4>Product Categories</h4>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Art</li>
+                <li>Books</li>
+                <li>Crystals</li>
+                <li>Design</li>
+                <li>Doodles</li>
+                <li>Deedlybobs</li>
+                <li>Farming</li>
+                <li>Gadgets</li>
+                <li>Hoverboards</li>
+                <li>Jams, Jellies, etc.</li>
+                <li>Magazines</li>
+                <li>Plants</li>
+                <li>Snakes &amp; Snake equiptment</li>
+                <li>Tables</li>
+                <li>Ventriliquist Figures</li>
+                <li>Yoyos</li>
               </ul>
 
             </div>
@@ -95,33 +100,51 @@
       </section>
       <!-- Projects -->
       <section>
-        <div class="container">
+        <div class="projects">
           <div class="title">
-
+            <h3>Projects</h3>
           </div>
-          <!-- Individual Project tiles in 3 columns -->
-          <div class="projects">
-            <div class="project">
-              <img src="" alt="">
+          <!-- Individual Project tiles in 1 row, 3 columns -->
+          <div class="container-fluid">
+            <div class="row col-md-4 col-xs-12 project">
+              <div class="image-container">
+                <img src="./resources/images/project1.png" alt="project 1">
+              </div>
               <div class="text">
-                <h4></h4>
-                <p></p>
+                <h4>The Right Tights</h4>
+                <p>by Riley Mae</p>
+                <p>These tights are 50 denier, beautifully constructed,
+                hand-dyed, and guaranteed to last (no more ladders!). Made with
+                high quality, completely toxic-free materials. Custom colors
+                available to all backers.</p>
               </div>
             </div>
 
-            <div class="project">
-              <img src="" alt="">
+            <div class="row col-md-4 col-xs-12 project">
+              <div class="image-container">
+                <img src="./resources/images/project2.png" alt="project 2">
+              </div>
               <div class="text">
-                <h4></h4>
-                <p></p>
+                <h4>Peppermint Smart Home</h4>
+                <p>by Brian McDonald</p>
+                <p>Instantly upgrade your home with technology that keeps your
+                family and home safe. We've made Peppermint easy to use. Just
+                talk to your phone and Peppermint will help you every step of
+                the way.</p>
               </div>
             </div>
 
-            <div class="project">
-              <img src="" alt="">
+            <div class="row col-md-4 col-xs-12 project">
+              <div class="image-container">
+                <img src="./resources/images/project3.png" alt="project 3">
+              </div>
               <div class="text">
-                <h4></h4>
-                <p></p>
+                <h4>American Streetlife</h4>
+                <p>by Patrick Wallace</p>
+                <p>I've been traveling around the United States for the past two
+                years. I've slept on hundreds of couches, more than a few
+                benches, and captured my experiences in this 120 page photo
+                album.</p>
               </div>
             </div>
 
@@ -130,14 +153,11 @@
       </section>
       <!-- Learn More -->
       <section>
-        <div class="container learn-more">
-          <div class="text">
-            <h2></h2>
-            <p></p>
-          </div>
-          <div class="button">
-
-          </div>
+        <div class="container-fluid learn-more">
+          <h2>Having trouble thinking of an idea?</h2>
+          <p>Inventors block strikes at the worst times. But that's all
+          changed with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
+          <button class="btn-primary btn-lg">Learn more</button>
         </div>
       </section>
     </main>

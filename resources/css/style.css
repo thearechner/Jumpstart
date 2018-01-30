@@ -13,8 +13,34 @@
   background-color: hsl(201.3, 62.3%, 52.2%);
   box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.5);
   max-width: 11.4rem;
+  text-align: center;
+}
+
+.active {
+  color: hsl(201.3, 62.3%, 52.2%);
+}
+
+a:link {
+  color: hsl(0, 0%, 85%);
+}
+a:hover,
+a:active {
+  hsl(0, 0%, 100%);
 }
 /*Navbar*/
+
+.navbar {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.logo {
+  padding-right: 2rem;
+}
+
+.nav li {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 /*Jumbotron*/
 .jumbotron {
