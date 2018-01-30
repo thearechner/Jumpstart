@@ -7,7 +7,12 @@
    font-family: "Open-Sans", sans-serif;
  }
 /*Bootstrap Overrides*/
-
+/*
+.container,
+.container-fluid {
+  padding: 2rem;
+}
+*/
 .btn-primary,
 .btn-lg {
   background-color: hsl(201.3, 62.3%, 52.2%);
@@ -16,8 +21,10 @@
   text-align: center;
 }
 
-.active {
-  color: hsl(201.3, 62.3%, 52.2%);
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: hsl(201, 62%, 52%);
 }
 
 a:link {
@@ -25,8 +32,25 @@ a:link {
 }
 a:hover,
 a:active {
-  hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
+
+/*Images*/
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.7;
+  transition: property time, property time;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: transformation(value);
+}
+
 /*Navbar*/
 
 .navbar {
@@ -49,9 +73,12 @@ a:active {
   height: 100%;
   color: hsl(0, 0%, 100%);
   text-align: center;
+  /*Offset header*/
+  margin-top: 3.5rem;
 }
 .jumbotron .container-fluid {
   max-width: 51.3rem;
+  margin: 11.5rem auto 11.5rem auto;
 }
 .jumbotron h1 {
   font-family: "Monoton", sans-serif;
@@ -65,3 +92,8 @@ a:active {
 /*Featured Project*/
 /*Projects*/
 /*Learn More*/
+
+.learn-more {
+  max-width: 42rem;
+  text-align: center;
+}

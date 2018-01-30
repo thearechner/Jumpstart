@@ -19,14 +19,14 @@
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Explore</a></li>
             <li><a href="#">Start a project</a></li>
             <li><a href="#">About us</a></li>
           </ul>
-          <a class="navbar-brand navbar-right logo">
+          <a class="navbar-brand navbar-right navbar-collapse logo">
             <img src="./resources/images/logo.png" alt="jumpstart logo">
           </a>
         </div>
@@ -50,19 +50,20 @@
 
       <!-- Featured Project -->
       <section>
-        <div class="featured-project">
+        <div class="container-fluid featured-project">
+
           <div class="title">
             <h3>Featured Project</h3>
           </div>
           <!-- Grid with 1 row, 3 columns -->
-          <div class="container-fluid">
-            <div class="row col-md-6 col-xs-12 featured-project-image">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 featured-project-image">
               <div class="image-container">
                 <img src="./resources/images/featured-project.png" alt="featured project">
               </div>
             </div>
 
-            <div class="row col-md-3 col-xs-6 featured-project-desc">
+            <div class="col-md-3 col-xs-6 featured-project-desc">
               <h4>DeFrost: A Documentary</h4>
               <p>by Leo De Firenze</p>
               <p>DeFrost is a documentary about growing up in a little red house
@@ -73,7 +74,7 @@
               cinematography and narration.</p>
             </div>
 
-            <div class="row col-md-3 col-xs-6 product-categories">
+            <div class="col-md-3 col-xs-6 product-categories">
               <h4>Product Categories</h4>
               <ul>
                 <li>Art</li>
@@ -100,13 +101,16 @@
       </section>
       <!-- Projects -->
       <section>
-        <div class="projects">
+        <!-- Individual Project tiles in 1 row, 3 columns -->
+        <div class="container-fluid">
+          <!-- Title -->
           <div class="title">
             <h3>Projects</h3>
           </div>
-          <!-- Individual Project tiles in 1 row, 3 columns -->
-          <div class="container-fluid">
-            <div class="row col-md-4 col-xs-12 project">
+          <!-- Projects -->
+          <div class="row projects">
+
+            <div class="col-md-4 col-xs-12 form-group project">
               <div class="image-container">
                 <img src="./resources/images/project1.png" alt="project 1">
               </div>
@@ -120,7 +124,7 @@
               </div>
             </div>
 
-            <div class="row col-md-4 col-xs-12 project">
+            <div class="col-md-4 col-xs-12 form-group project">
               <div class="image-container">
                 <img src="./resources/images/project2.png" alt="project 2">
               </div>
@@ -134,7 +138,7 @@
               </div>
             </div>
 
-            <div class="row col-md-4 col-xs-12 project">
+            <div class="col-md-4 col-xs-12 form-group project">
               <div class="image-container">
                 <img src="./resources/images/project3.png" alt="project 3">
               </div>
@@ -149,6 +153,11 @@
             </div>
 
           </div>
+
+
+
+
+
         </div>
       </section>
       <!-- Learn More -->
