@@ -6,19 +6,31 @@
  body {
    font-family: "Open-Sans", sans-serif;
  }
-/*Bootstrap Overrides*/
-/*
-.container,
-.container-fluid {
-  padding: 2rem;
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: hsl(201.3, 62.3%, 52.2%);
 }
-*/
-.btn-primary,
-.btn-lg {
+
+h4 {
+  font-size: 1.3;
+  font-weight: 600;
+}
+
+/*Bootstrap Overrides*/
+
+.btn-primary {
   background-color: hsl(201.3, 62.3%, 52.2%);
-  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.5);
+  border: none;
   max-width: 11.4rem;
   text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: hsl(201.3, 62.3%, 52.2%);
+  border: none;
+  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.5);
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -44,12 +56,17 @@ a:active {
 .image-container img {
   opacity: 0.7;
   transition: property time, property time;
+  margin: auto;
+  width: 100%;
 }
 
 .image-container img:hover {
   opacity: 1;
   transform: transformation(value);
 }
+
+
+
 
 /*Navbar*/
 
@@ -90,10 +107,42 @@ a:active {
 }
 
 /*Featured Project*/
+
+/*Align image with text*/
+.featured-project-image {
+  margin-top: 0.7rem;
+}
+
 /*Projects*/
+
+.project {
+  margin-bottom: 5.85rem;
+}
+
 /*Learn More*/
 
 .learn-more {
+  background-color: hsla(0, 0%, 95%, 1);
+  padding-bottom: 5.2rem;
+  padding-top: 5.2rem;
+}
+
+.learn-more .container {
   max-width: 42rem;
   text-align: center;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width:768px) {
+  .navbar-brand {
+    display: none;
+  }
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+  .project .image-container {
+    max-height: 20rem;
+  }
 }
