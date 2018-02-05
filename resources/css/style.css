@@ -55,14 +55,14 @@ a:active {
 
 .image-container img {
   opacity: 0.7;
-  transition: property time, property time;
   margin: auto;
   width: 100%;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .image-container img:hover {
   opacity: 1;
-  transform: transformation(value);
+  transform: scale(1.1);
 }
 
 
@@ -85,7 +85,6 @@ a:active {
 
 /*Jumbotron*/
 .jumbotron {
-  background-image: url(../images/jumbotron-bike.jpg);
   background-size: cover;
   height: 100%;
   color: hsl(0, 0%, 100%);
@@ -93,6 +92,23 @@ a:active {
   /*Offset header*/
   margin-top: 3.5rem;
 }
+
+.background-bike {
+  background-image: url(../images/jumbotron-bike.jpg);
+}
+
+.background-beer {
+  background-image: url(../images/jumbotron-beer.jpg);
+}
+
+.background-flowers {
+  background-image: url(../images/jumbotron-flowers.jpg);
+}
+
+.background-duffel {
+  background-image: url(../images/jumbotron-duffel.jpg);
+}
+
 .jumbotron .container-fluid {
   max-width: 51.3rem;
   margin: 11.5rem auto 11.5rem auto;
